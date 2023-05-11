@@ -1,0 +1,25 @@
+query Countries {
+  countries {
+    name
+    emoji
+    code
+    continent {
+      name
+    }
+  }
+}
+query Country($id: ID!) {
+  country(code: $id) {
+    name
+    emoji
+    code
+    capital
+    currency
+    continent {
+      name
+    }
+    languages {
+      name
+    }
+  }
+}

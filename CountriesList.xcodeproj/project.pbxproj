@@ -7,13 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE374CB22A0AFC720019F74D /* CountriesListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CB12A0AFC720019F74D /* CountriesListApp.swift */; };
-		DE374CB42A0AFC720019F74D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CB32A0AFC720019F74D /* ContentView.swift */; };
 		DE374CB62A0AFC730019F74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE374CB52A0AFC730019F74D /* Assets.xcassets */; };
 		DE374CBA2A0AFC730019F74D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE374CB92A0AFC730019F74D /* Preview Assets.xcassets */; };
 		DE374CC42A0AFC730019F74D /* CountriesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CC32A0AFC730019F74D /* CountriesListTests.swift */; };
-		DE374CCE2A0AFC730019F74D /* CountriesListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CCD2A0AFC730019F74D /* CountriesListUITests.swift */; };
-		DE374CD02A0AFC730019F74D /* CountriesListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CCF2A0AFC730019F74D /* CountriesListUITestsLaunchTests.swift */; };
+		DE374CDD2A0AFC8B0019F74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CDC2A0AFC8B0019F74D /* AppDelegate.swift */; };
+		DE374CDF2A0AFCBC0019F74D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CDE2A0AFCBC0019F74D /* SceneDelegate.swift */; };
+		DE374CE32A0AFD520019F74D /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = DE374CE22A0AFD520019F74D /* Swinject */; };
+		DE374CE62A0AFF770019F74D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = DE374CE52A0AFF770019F74D /* Apollo */; };
+		DE374CEC2A0B097A0019F74D /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CEA2A0B097A0019F74D /* ServiceLocator.swift */; };
+		DE374CED2A0B097A0019F74D /* AppServiceLocator+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CE92A0B097A0019F74D /* AppServiceLocator+Factory.swift */; };
+		DE374CEE2A0B097A0019F74D /* AppServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CEB2A0B097A0019F74D /* AppServiceLocator.swift */; };
+		DE374CF62A0B09C60019F74D /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CF32A0B09C60019F74D /* BaseCoordinator.swift */; };
+		DE374CF72A0B09C60019F74D /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CF42A0B09C60019F74D /* RootCoordinator.swift */; };
+		DE374CF82A0B09C60019F74D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CF52A0B09C60019F74D /* Coordinator.swift */; };
+		DE374D052A0B0A450019F74D /* NavigationRootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D042A0B0A450019F74D /* NavigationRootCoordinator.swift */; };
+		DE374D092A0B24DB0019F74D /* CountriesListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D082A0B24DB0019F74D /* CountriesListCoordinator.swift */; };
+		DE374D0D2A0BB8920019F74D /* GrapQLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D0C2A0BB8920019F74D /* GrapQLClient.swift */; };
+		DE374D122A0BBA520019F74D /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = DE374D112A0BBA520019F74D /* Queries.graphql */; };
+		DE374D3C2A0BC09A0019F74D /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D3B2A0BC09A0019F74D /* ApolloClient.swift */; };
+		DE374D3E2A0BC0BB0019F74D /* ApiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D3D2A0BC0BB0019F74D /* ApiConfiguration.swift */; };
+		DE374D472A0BCE590019F74D /* ApolloGrapQLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D462A0BCE590019F74D /* ApolloGrapQLEndpoint.swift */; };
+		DE374D4B2A0BD8D30019F74D /* BaseEndopoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D4A2A0BD8D30019F74D /* BaseEndopoint.swift */; };
+		DE374D4D2A0BD94D0019F74D /* EndpointFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D4C2A0BD94D0019F74D /* EndpointFactory.swift */; };
+		DE374D502A0BDB610019F74D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D4F2A0BDB610019F74D /* Country.swift */; };
+		DE374D542A0BDDA00019F74D /* GraphQLConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D532A0BDDA00019F74D /* GraphQLConverters.swift */; };
+		DE374D562A0BE0510019F74D /* CountriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D552A0BE0510019F74D /* CountriesListViewController.swift */; };
+		DE374D582A0BE0570019F74D /* CountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D572A0BE0570019F74D /* CountriesListViewModel.swift */; };
+		DE374D5E2A0BE2150019F74D /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D5A2A0BE2150019F74D /* NavigationRouter.swift */; };
+		DE374D602A0BE2150019F74D /* RouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D5C2A0BE2150019F74D /* RouterProtocols.swift */; };
+		DE374D652A0BF32B0019F74D /* UsefulExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D642A0BF32B0019F74D /* UsefulExtensions.swift */; };
+		DE374D672A0BF3880019F74D /* CountriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D662A0BF3880019F74D /* CountriesRepository.swift */; };
+		DE374D6C2A0BF6720019F74D /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D6B2A0BF6720019F74D /* CountryCell.swift */; };
+		DE374D6E2A0BF6850019F74D /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE374D6D2A0BF6850019F74D /* CountryCell.xib */; };
+		DE374D832A0C03010019F74D /* CountriesQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D782A0C03010019F74D /* CountriesQuery.graphql.swift */; };
+		DE374D842A0C03010019F74D /* CountryQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D792A0C03010019F74D /* CountryQuery.graphql.swift */; };
+		DE374D852A0C03010019F74D /* CountriesList.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D7A2A0C03010019F74D /* CountriesList.graphql.swift */; };
+		DE374D862A0C03010019F74D /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D7D2A0C03010019F74D /* Query.graphql.swift */; };
+		DE374D872A0C03010019F74D /* Language.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D7E2A0C03010019F74D /* Language.graphql.swift */; };
+		DE374D882A0C03010019F74D /* Country.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D7F2A0C03010019F74D /* Country.graphql.swift */; };
+		DE374D892A0C03010019F74D /* Continent.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D802A0C03010019F74D /* Continent.graphql.swift */; };
+		DE374D8A2A0C03010019F74D /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D812A0C03010019F74D /* SchemaConfiguration.swift */; };
+		DE374D8B2A0C03010019F74D /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D822A0C03010019F74D /* SchemaMetadata.graphql.swift */; };
+		DE374D8D2A0C632A0019F74D /* CountryDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D8C2A0C632A0019F74D /* CountryDetailsCoordinator.swift */; };
+		DE374D8F2A0C64800019F74D /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D8E2A0C64800019F74D /* CountryDetailsViewModel.swift */; };
+		DE374D912A0C64A20019F74D /* CountryDetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374D902A0C64A20019F74D /* CountryDetailsRepository.swift */; };
+		DE374D962A0C66430019F74D /* CountryDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE374D942A0C66430019F74D /* CountryDetailsViewController.m */; };
+		DE374D972A0C66430019F74D /* CountryDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE374D952A0C66430019F74D /* CountryDetailsViewController.xib */; };
+		DEAA7D472A0C6DFD00E44F36 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAA7D462A0C6DFD00E44F36 /* CountryDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,27 +64,60 @@
 			remoteGlobalIDString = DE374CAD2A0AFC720019F74D;
 			remoteInfo = CountriesList;
 		};
-		DE374CCA2A0AFC730019F74D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DE374CA62A0AFC720019F74D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DE374CAD2A0AFC720019F74D;
-			remoteInfo = CountriesList;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DE374CAE2A0AFC720019F74D /* CountriesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountriesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE374CB12A0AFC720019F74D /* CountriesListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListApp.swift; sourceTree = "<group>"; };
-		DE374CB32A0AFC720019F74D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE374CB52A0AFC730019F74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE374CB72A0AFC730019F74D /* CountriesList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CountriesList.entitlements; sourceTree = "<group>"; };
 		DE374CB92A0AFC730019F74D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE374CBF2A0AFC730019F74D /* CountriesListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE374CC32A0AFC730019F74D /* CountriesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListTests.swift; sourceTree = "<group>"; };
-		DE374CC92A0AFC730019F74D /* CountriesListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE374CCD2A0AFC730019F74D /* CountriesListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListUITests.swift; sourceTree = "<group>"; };
-		DE374CCF2A0AFC730019F74D /* CountriesListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DE374CDC2A0AFC8B0019F74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE374CDE2A0AFCBC0019F74D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE374CE02A0AFCDF0019F74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DE374CE92A0B097A0019F74D /* AppServiceLocator+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServiceLocator+Factory.swift"; sourceTree = "<group>"; };
+		DE374CEA2A0B097A0019F74D /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		DE374CEB2A0B097A0019F74D /* AppServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServiceLocator.swift; sourceTree = "<group>"; };
+		DE374CF32A0B09C60019F74D /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		DE374CF42A0B09C60019F74D /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		DE374CF52A0B09C60019F74D /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DE374D042A0B0A450019F74D /* NavigationRootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRootCoordinator.swift; sourceTree = "<group>"; };
+		DE374D082A0B24DB0019F74D /* CountriesListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListCoordinator.swift; sourceTree = "<group>"; };
+		DE374D0C2A0BB8920019F74D /* GrapQLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapQLClient.swift; sourceTree = "<group>"; };
+		DE374D112A0BBA520019F74D /* Queries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
+		DE374D3B2A0BC09A0019F74D /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
+		DE374D3D2A0BC0BB0019F74D /* ApiConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfiguration.swift; sourceTree = "<group>"; };
+		DE374D462A0BCE590019F74D /* ApolloGrapQLEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloGrapQLEndpoint.swift; sourceTree = "<group>"; };
+		DE374D4A2A0BD8D30019F74D /* BaseEndopoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEndopoint.swift; sourceTree = "<group>"; };
+		DE374D4C2A0BD94D0019F74D /* EndpointFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointFactory.swift; sourceTree = "<group>"; };
+		DE374D4F2A0BDB610019F74D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		DE374D532A0BDDA00019F74D /* GraphQLConverters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLConverters.swift; sourceTree = "<group>"; };
+		DE374D552A0BE0510019F74D /* CountriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewController.swift; sourceTree = "<group>"; };
+		DE374D572A0BE0570019F74D /* CountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewModel.swift; sourceTree = "<group>"; };
+		DE374D5A2A0BE2150019F74D /* NavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		DE374D5C2A0BE2150019F74D /* RouterProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocols.swift; sourceTree = "<group>"; };
+		DE374D642A0BF32B0019F74D /* UsefulExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulExtensions.swift; sourceTree = "<group>"; };
+		DE374D662A0BF3880019F74D /* CountriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesRepository.swift; sourceTree = "<group>"; };
+		DE374D6B2A0BF6720019F74D /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		DE374D6D2A0BF6850019F74D /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
+		DE374D782A0C03010019F74D /* CountriesQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesQuery.graphql.swift; sourceTree = "<group>"; };
+		DE374D792A0C03010019F74D /* CountryQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryQuery.graphql.swift; sourceTree = "<group>"; };
+		DE374D7A2A0C03010019F74D /* CountriesList.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesList.graphql.swift; sourceTree = "<group>"; };
+		DE374D7D2A0C03010019F74D /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		DE374D7E2A0C03010019F74D /* Language.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.graphql.swift; sourceTree = "<group>"; };
+		DE374D7F2A0C03010019F74D /* Country.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.graphql.swift; sourceTree = "<group>"; };
+		DE374D802A0C03010019F74D /* Continent.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Continent.graphql.swift; sourceTree = "<group>"; };
+		DE374D812A0C03010019F74D /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		DE374D822A0C03010019F74D /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
+		DE374D8C2A0C632A0019F74D /* CountryDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsCoordinator.swift; sourceTree = "<group>"; };
+		DE374D8E2A0C64800019F74D /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
+		DE374D902A0C64A20019F74D /* CountryDetailsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsRepository.swift; sourceTree = "<group>"; };
+		DE374D922A0C66430019F74D /* CountriesList-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CountriesList-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE374D932A0C66430019F74D /* CountryDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryDetailsViewController.h; sourceTree = "<group>"; };
+		DE374D942A0C66430019F74D /* CountryDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryDetailsViewController.m; sourceTree = "<group>"; };
+		DE374D952A0C66430019F74D /* CountryDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryDetailsViewController.xib; sourceTree = "<group>"; };
+		DEAA7D462A0C6DFD00E44F36 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +125,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE374CE32A0AFD520019F74D /* Swinject in Frameworks */,
+				DE374CE62A0AFF770019F74D /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DE374CBC2A0AFC730019F74D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE374CC62A0AFC730019F74D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,7 +145,6 @@
 			children = (
 				DE374CB02A0AFC720019F74D /* CountriesList */,
 				DE374CC22A0AFC730019F74D /* CountriesListTests */,
-				DE374CCC2A0AFC730019F74D /* CountriesListUITests */,
 				DE374CAF2A0AFC720019F74D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +154,6 @@
 			children = (
 				DE374CAE2A0AFC720019F74D /* CountriesList.app */,
 				DE374CBF2A0AFC730019F74D /* CountriesListTests.xctest */,
-				DE374CC92A0AFC730019F74D /* CountriesListUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,10 +161,13 @@
 		DE374CB02A0AFC720019F74D /* CountriesList */ = {
 			isa = PBXGroup;
 			children = (
-				DE374CB12A0AFC720019F74D /* CountriesListApp.swift */,
-				DE374CB32A0AFC720019F74D /* ContentView.swift */,
+				DE374D0A2A0BB7A70019F74D /* Sources */,
+				DE374CDC2A0AFC8B0019F74D /* AppDelegate.swift */,
+				DE374CDE2A0AFCBC0019F74D /* SceneDelegate.swift */,
 				DE374CB52A0AFC730019F74D /* Assets.xcassets */,
+				DE374CE02A0AFCDF0019F74D /* Info.plist */,
 				DE374CB72A0AFC730019F74D /* CountriesList.entitlements */,
+				DE374D922A0C66430019F74D /* CountriesList-Bridging-Header.h */,
 				DE374CB82A0AFC730019F74D /* Preview Content */,
 			);
 			path = CountriesList;
@@ -120,13 +189,212 @@
 			path = CountriesListTests;
 			sourceTree = "<group>";
 		};
-		DE374CCC2A0AFC730019F74D /* CountriesListUITests */ = {
+		DE374CEF2A0B09850019F74D /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				DE374CCD2A0AFC730019F74D /* CountriesListUITests.swift */,
-				DE374CCF2A0AFC730019F74D /* CountriesListUITestsLaunchTests.swift */,
+				DE374CEA2A0B097A0019F74D /* ServiceLocator.swift */,
+				DE374CEB2A0B097A0019F74D /* AppServiceLocator.swift */,
+				DE374CE92A0B097A0019F74D /* AppServiceLocator+Factory.swift */,
 			);
-			path = CountriesListUITests;
+			path = DI;
+			sourceTree = "<group>";
+		};
+		DE374CF12A0B09BA0019F74D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D592A0BE2150019F74D /* Routing */,
+				DE374CF22A0B09C60019F74D /* Coordinators */,
+				DE374CEF2A0B09850019F74D /* DI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DE374CF22A0B09C60019F74D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				DE374CF32A0B09C60019F74D /* BaseCoordinator.swift */,
+				DE374CF42A0B09C60019F74D /* RootCoordinator.swift */,
+				DE374CF52A0B09C60019F74D /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		DE374D022A0B0A1D0019F74D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D032A0B0A350019F74D /* Root */,
+				DE374D062A0B23F70019F74D /* CountriesList */,
+				DE374D072A0B24050019F74D /* CountryDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DE374D032A0B0A350019F74D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D042A0B0A450019F74D /* NavigationRootCoordinator.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		DE374D062A0B23F70019F74D /* CountriesList */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D082A0B24DB0019F74D /* CountriesListCoordinator.swift */,
+				DE374D552A0BE0510019F74D /* CountriesListViewController.swift */,
+				DE374D572A0BE0570019F74D /* CountriesListViewModel.swift */,
+				DE374D662A0BF3880019F74D /* CountriesRepository.swift */,
+				DE374D682A0BF64C0019F74D /* View */,
+			);
+			path = CountriesList;
+			sourceTree = "<group>";
+		};
+		DE374D072A0B24050019F74D /* CountryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D8C2A0C632A0019F74D /* CountryDetailsCoordinator.swift */,
+				DE374D8E2A0C64800019F74D /* CountryDetailsViewModel.swift */,
+				DE374D932A0C66430019F74D /* CountryDetailsViewController.h */,
+				DE374D942A0C66430019F74D /* CountryDetailsViewController.m */,
+				DE374D952A0C66430019F74D /* CountryDetailsViewController.xib */,
+				DE374D902A0C64A20019F74D /* CountryDetailsRepository.swift */,
+			);
+			path = CountryDetails;
+			sourceTree = "<group>";
+		};
+		DE374D0A2A0BB7A70019F74D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D632A0BF31B0019F74D /* Utils */,
+				DE374D0F2A0BB9510019F74D /* GraphQL */,
+				DE374D0B2A0BB7AE0019F74D /* Network */,
+				DE374D022A0B0A1D0019F74D /* Modules */,
+				DE374CF12A0B09BA0019F74D /* Core */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DE374D0B2A0BB7AE0019F74D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D412A0BCE1B0019F74D /* Countries Api */,
+				DE374D0C2A0BB8920019F74D /* GrapQLClient.swift */,
+				DE374D3B2A0BC09A0019F74D /* ApolloClient.swift */,
+				DE374D3D2A0BC0BB0019F74D /* ApiConfiguration.swift */,
+				DE374D462A0BCE590019F74D /* ApolloGrapQLEndpoint.swift */,
+				DE374D4A2A0BD8D30019F74D /* BaseEndopoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE374D0F2A0BB9510019F74D /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D752A0C03010019F74D /* Codegen */,
+				DE374D102A0BB95D0019F74D /* Fragments */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		DE374D102A0BB95D0019F74D /* Fragments */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D112A0BBA520019F74D /* Queries.graphql */,
+			);
+			path = Fragments;
+			sourceTree = "<group>";
+		};
+		DE374D412A0BCE1B0019F74D /* Countries Api */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D4C2A0BD94D0019F74D /* EndpointFactory.swift */,
+				DE374D532A0BDDA00019F74D /* GraphQLConverters.swift */,
+				DE374D4E2A0BDB580019F74D /* Entities */,
+			);
+			path = "Countries Api";
+			sourceTree = "<group>";
+		};
+		DE374D4E2A0BDB580019F74D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D4F2A0BDB610019F74D /* Country.swift */,
+				DEAA7D462A0C6DFD00E44F36 /* CountryDetails.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DE374D592A0BE2150019F74D /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D5A2A0BE2150019F74D /* NavigationRouter.swift */,
+				DE374D5C2A0BE2150019F74D /* RouterProtocols.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		DE374D632A0BF31B0019F74D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D642A0BF32B0019F74D /* UsefulExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DE374D682A0BF64C0019F74D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D6B2A0BF6720019F74D /* CountryCell.swift */,
+				DE374D6D2A0BF6850019F74D /* CountryCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE374D752A0C03010019F74D /* Codegen */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D762A0C03010019F74D /* Operations */,
+				DE374D7A2A0C03010019F74D /* CountriesList.graphql.swift */,
+				DE374D7B2A0C03010019F74D /* Schema */,
+			);
+			path = Codegen;
+			sourceTree = "<group>";
+		};
+		DE374D762A0C03010019F74D /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D772A0C03010019F74D /* Queries */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		DE374D772A0C03010019F74D /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D782A0C03010019F74D /* CountriesQuery.graphql.swift */,
+				DE374D792A0C03010019F74D /* CountryQuery.graphql.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		DE374D7B2A0C03010019F74D /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D7C2A0C03010019F74D /* Objects */,
+				DE374D812A0C03010019F74D /* SchemaConfiguration.swift */,
+				DE374D822A0C03010019F74D /* SchemaMetadata.graphql.swift */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		DE374D7C2A0C03010019F74D /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				DE374D7D2A0C03010019F74D /* Query.graphql.swift */,
+				DE374D7E2A0C03010019F74D /* Language.graphql.swift */,
+				DE374D7F2A0C03010019F74D /* Country.graphql.swift */,
+				DE374D802A0C03010019F74D /* Continent.graphql.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +413,10 @@
 			dependencies = (
 			);
 			name = CountriesList;
+			packageProductDependencies = (
+				DE374CE22A0AFD520019F74D /* Swinject */,
+				DE374CE52A0AFF770019F74D /* Apollo */,
+			);
 			productName = CountriesList;
 			productReference = DE374CAE2A0AFC720019F74D /* CountriesList.app */;
 			productType = "com.apple.product-type.application";
@@ -167,24 +439,6 @@
 			productReference = DE374CBF2A0AFC730019F74D /* CountriesListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DE374CC82A0AFC730019F74D /* CountriesListUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE374CD92A0AFC730019F74D /* Build configuration list for PBXNativeTarget "CountriesListUITests" */;
-			buildPhases = (
-				DE374CC52A0AFC730019F74D /* Sources */,
-				DE374CC62A0AFC730019F74D /* Frameworks */,
-				DE374CC72A0AFC730019F74D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DE374CCB2A0AFC730019F74D /* PBXTargetDependency */,
-			);
-			name = CountriesListUITests;
-			productName = CountriesListUITests;
-			productReference = DE374CC92A0AFC730019F74D /* CountriesListUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,12 +451,9 @@
 				TargetAttributes = {
 					DE374CAD2A0AFC720019F74D = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					DE374CBE2A0AFC730019F74D = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = DE374CAD2A0AFC720019F74D;
-					};
-					DE374CC82A0AFC730019F74D = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = DE374CAD2A0AFC720019F74D;
 					};
@@ -217,13 +468,18 @@
 				Base,
 			);
 			mainGroup = DE374CA52A0AFC720019F74D;
+			packageReferences = (
+				DE374CE12A0AFD520019F74D /* XCRemoteSwiftPackageReference "Swinject" */,
+				DE374CE42A0AFF770019F74D /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				DE374D6F2A0BFBD00019F74D /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				DE374D722A0BFD700019F74D /* XCRemoteSwiftPackageReference "SwiftSVG" */,
+			);
 			productRefGroup = DE374CAF2A0AFC720019F74D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DE374CAD2A0AFC720019F74D /* CountriesList */,
 				DE374CBE2A0AFC730019F74D /* CountriesListTests */,
-				DE374CC82A0AFC730019F74D /* CountriesListUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,19 +489,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE374D6E2A0BF6850019F74D /* CountryCell.xib in Resources */,
+				DE374D122A0BBA520019F74D /* Queries.graphql in Resources */,
 				DE374CBA2A0AFC730019F74D /* Preview Assets.xcassets in Resources */,
+				DE374D972A0C66430019F74D /* CountryDetailsViewController.xib in Resources */,
 				DE374CB62A0AFC730019F74D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DE374CBD2A0AFC730019F74D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE374CC72A0AFC730019F74D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,8 +511,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE374CB42A0AFC720019F74D /* ContentView.swift in Sources */,
-				DE374CB22A0AFC720019F74D /* CountriesListApp.swift in Sources */,
+				DE374D0D2A0BB8920019F74D /* GrapQLClient.swift in Sources */,
+				DE374D892A0C03010019F74D /* Continent.graphql.swift in Sources */,
+				DE374D962A0C66430019F74D /* CountryDetailsViewController.m in Sources */,
+				DE374D472A0BCE590019F74D /* ApolloGrapQLEndpoint.swift in Sources */,
+				DE374D052A0B0A450019F74D /* NavigationRootCoordinator.swift in Sources */,
+				DE374D6C2A0BF6720019F74D /* CountryCell.swift in Sources */,
+				DE374D4D2A0BD94D0019F74D /* EndpointFactory.swift in Sources */,
+				DE374D602A0BE2150019F74D /* RouterProtocols.swift in Sources */,
+				DE374CF82A0B09C60019F74D /* Coordinator.swift in Sources */,
+				DE374CEE2A0B097A0019F74D /* AppServiceLocator.swift in Sources */,
+				DE374D3C2A0BC09A0019F74D /* ApolloClient.swift in Sources */,
+				DEAA7D472A0C6DFD00E44F36 /* CountryDetails.swift in Sources */,
+				DE374D652A0BF32B0019F74D /* UsefulExtensions.swift in Sources */,
+				DE374D092A0B24DB0019F74D /* CountriesListCoordinator.swift in Sources */,
+				DE374D672A0BF3880019F74D /* CountriesRepository.swift in Sources */,
+				DE374D8D2A0C632A0019F74D /* CountryDetailsCoordinator.swift in Sources */,
+				DE374D8F2A0C64800019F74D /* CountryDetailsViewModel.swift in Sources */,
+				DE374D832A0C03010019F74D /* CountriesQuery.graphql.swift in Sources */,
+				DE374D912A0C64A20019F74D /* CountryDetailsRepository.swift in Sources */,
+				DE374D842A0C03010019F74D /* CountryQuery.graphql.swift in Sources */,
+				DE374D562A0BE0510019F74D /* CountriesListViewController.swift in Sources */,
+				DE374D582A0BE0570019F74D /* CountriesListViewModel.swift in Sources */,
+				DE374D882A0C03010019F74D /* Country.graphql.swift in Sources */,
+				DE374CF62A0B09C60019F74D /* BaseCoordinator.swift in Sources */,
+				DE374CEC2A0B097A0019F74D /* ServiceLocator.swift in Sources */,
+				DE374D542A0BDDA00019F74D /* GraphQLConverters.swift in Sources */,
+				DE374D852A0C03010019F74D /* CountriesList.graphql.swift in Sources */,
+				DE374D4B2A0BD8D30019F74D /* BaseEndopoint.swift in Sources */,
+				DE374D5E2A0BE2150019F74D /* NavigationRouter.swift in Sources */,
+				DE374D3E2A0BC0BB0019F74D /* ApiConfiguration.swift in Sources */,
+				DE374D502A0BDB610019F74D /* Country.swift in Sources */,
+				DE374D872A0C03010019F74D /* Language.graphql.swift in Sources */,
+				DE374CDD2A0AFC8B0019F74D /* AppDelegate.swift in Sources */,
+				DE374D8B2A0C03010019F74D /* SchemaMetadata.graphql.swift in Sources */,
+				DE374CDF2A0AFCBC0019F74D /* SceneDelegate.swift in Sources */,
+				DE374CED2A0B097A0019F74D /* AppServiceLocator+Factory.swift in Sources */,
+				DE374CF72A0B09C60019F74D /* RootCoordinator.swift in Sources */,
+				DE374D862A0C03010019F74D /* Query.graphql.swift in Sources */,
+				DE374D8A2A0C03010019F74D /* SchemaConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +561,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE374CC52A0AFC730019F74D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE374CCE2A0AFC730019F74D /* CountriesListUITests.swift in Sources */,
-				DE374CD02A0AFC730019F74D /* CountriesListUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +568,6 @@
 			isa = PBXTargetDependency;
 			target = DE374CAD2A0AFC720019F74D /* CountriesList */;
 			targetProxy = DE374CC02A0AFC730019F74D /* PBXContainerItemProxy */;
-		};
-		DE374CCB2A0AFC730019F74D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DE374CAD2A0AFC720019F74D /* CountriesList */;
-			targetProxy = DE374CCA2A0AFC730019F74D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,6 +686,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CountriesList/CountriesList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -419,6 +695,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CountriesList/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -427,8 +704,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -437,10 +714,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aahibalau.CountriesList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CountriesList/CountriesList-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,6 +730,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CountriesList/CountriesList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -457,6 +739,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CountriesList/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -465,8 +748,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -475,10 +758,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aahibalau.CountriesList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CountriesList/CountriesList-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -528,50 +814,6 @@
 			};
 			name = Release;
 		};
-		DE374CDA2A0AFC730019F74D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 245RD789RF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aahibalau.CountriesListUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CountriesList;
-			};
-			name = Debug;
-		};
-		DE374CDB2A0AFC730019F74D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 245RD789RF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aahibalau.CountriesListUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CountriesList;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -602,16 +844,55 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE374CD92A0AFC730019F74D /* Build configuration list for PBXNativeTarget "CountriesListUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DE374CDA2A0AFC730019F74D /* Debug */,
-				DE374CDB2A0AFC730019F74D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE374CE12A0AFD520019F74D /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DE374CE42A0AFF770019F74D /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DE374D6F2A0BFBD00019F74D /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		DE374D722A0BFD700019F74D /* XCRemoteSwiftPackageReference "SwiftSVG" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchoe/SwiftSVG";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE374CE22A0AFD520019F74D /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE374CE12A0AFD520019F74D /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		DE374CE52A0AFF770019F74D /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE374CE42A0AFF770019F74D /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE374CA62A0AFC720019F74D /* Project object */;
 }

@@ -1,0 +1,29 @@
+{
+  "schemaNamespace" : "CountriesList",
+  "input" : {
+    "operationSearchPaths" : [
+      "**/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "./CountriesList/Sources/GraphQL/*.json"
+    ]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "schemaTypes" : {
+      "path" : "./CountriesList/Sources/GraphQL/Codegen",
+      "moduleType" : {
+        "embeddedInTarget" : {
+          "name" : "CountriesList"
+        }
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}
