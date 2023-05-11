@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftSVG
 
 class CountryCell: UITableViewCell {
   var flagView: UIView?

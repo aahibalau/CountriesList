@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE374CB62A0AFC730019F74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE374CB52A0AFC730019F74D /* Assets.xcassets */; };
 		DE374CBA2A0AFC730019F74D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE374CB92A0AFC730019F74D /* Preview Assets.xcassets */; };
-		DE374CC42A0AFC730019F74D /* CountriesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CC32A0AFC730019F74D /* CountriesListTests.swift */; };
+		DE374CC42A0AFC730019F74D /* ApolloClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CC32A0AFC730019F74D /* ApolloClientTest.swift */; };
 		DE374CDD2A0AFC8B0019F74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CDC2A0AFC8B0019F74D /* AppDelegate.swift */; };
 		DE374CDF2A0AFCBC0019F74D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE374CDE2A0AFCBC0019F74D /* SceneDelegate.swift */; };
 		DE374CE32A0AFD520019F74D /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = DE374CE22A0AFD520019F74D /* Swinject */; };
@@ -54,6 +54,7 @@
 		DE374D962A0C66430019F74D /* CountryDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE374D942A0C66430019F74D /* CountryDetailsViewController.m */; };
 		DE374D972A0C66430019F74D /* CountryDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE374D952A0C66430019F74D /* CountryDetailsViewController.xib */; };
 		DEAA7D472A0C6DFD00E44F36 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAA7D462A0C6DFD00E44F36 /* CountryDetails.swift */; };
+		DEAA7D4A2A0C81AA00E44F36 /* MockNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAA7D492A0C81AA00E44F36 /* MockNetworkTransport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,7 @@
 		DE374CB72A0AFC730019F74D /* CountriesList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CountriesList.entitlements; sourceTree = "<group>"; };
 		DE374CB92A0AFC730019F74D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE374CBF2A0AFC730019F74D /* CountriesListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE374CC32A0AFC730019F74D /* CountriesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListTests.swift; sourceTree = "<group>"; };
+		DE374CC32A0AFC730019F74D /* ApolloClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClientTest.swift; sourceTree = "<group>"; };
 		DE374CDC2A0AFC8B0019F74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE374CDE2A0AFCBC0019F74D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DE374CE02A0AFCDF0019F74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 		DE374D942A0C66430019F74D /* CountryDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryDetailsViewController.m; sourceTree = "<group>"; };
 		DE374D952A0C66430019F74D /* CountryDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryDetailsViewController.xib; sourceTree = "<group>"; };
 		DEAA7D462A0C6DFD00E44F36 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
+		DEAA7D492A0C81AA00E44F36 /* MockNetworkTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkTransport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +186,8 @@
 		DE374CC22A0AFC730019F74D /* CountriesListTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE374CC32A0AFC730019F74D /* CountriesListTests.swift */,
+				DE374CC32A0AFC730019F74D /* ApolloClientTest.swift */,
+				DEAA7D482A0C819B00E44F36 /* Mocks */,
 			);
 			path = CountriesListTests;
 			sourceTree = "<group>";
@@ -397,6 +400,14 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		DEAA7D482A0C819B00E44F36 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DEAA7D492A0C81AA00E44F36 /* MockNetworkTransport.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -557,7 +568,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE374CC42A0AFC730019F74D /* CountriesListTests.swift in Sources */,
+				DEAA7D4A2A0C81AA00E44F36 /* MockNetworkTransport.swift in Sources */,
+				DE374CC42A0AFC730019F74D /* ApolloClientTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@ import Combine
 
 struct ApolloGrapQLClient: GrapQLClient {
   let apollo: ApolloClient
+  private let callbackQueue = DispatchQueue(label: "ApolloClient", attributes: .concurrent)
   
   init(apollo: ApolloClient) {
     self.apollo = apollo
@@ -18,7 +19,7 @@ struct ApolloGrapQLClient: GrapQLClient {
   
   func fetch<RequestEndpoint: GrapQLEndpoint>(from endpoint: RequestEndpoint) -> AnyPublisher<RequestEndpoint.Response, Error> {
     Future { completion in
-      apollo.fetch(query: endpoint.query) { response in
+      apollo.fetch(query: endpoint.query, cachePolicy: .fetchIgnoringCacheCompletely, queue: callbackQueue) { response in
         switch response {
         case let .failure(error):
           completion(.failure(error))
@@ -32,6 +33,7 @@ struct ApolloGrapQLClient: GrapQLClient {
         }
       }
     }
+    .receive(on: DispatchQueue.main)
     .eraseToAnyPublisher()
   }
 }
